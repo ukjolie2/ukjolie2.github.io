@@ -3,23 +3,78 @@
 <body>
 
     <h1>Home</h1>
-    <form action="https://ukjolie2.github.io/coding-projects.html">
-        <input type="submit" value="Coding Projects" />
-    </form>
-    <form action="https://ukjolie2.github.io/game-projects.html">
-        <input type="submit" value="Game Projects" />
-    </form>
-    <form action="https://ukjolie2.github.io/animations.html">
-        <input type="submit" value="Animations" />
-    </form>
-    <form action="https://ukjolie2.github.io/dig-2d-art.html">
-        <input type="submit" value="Digital 2D Art" />
-    </form>
-    <form action="https://ukjolie2.github.io/dig-3d-art.html">
-        <input type="submit" value="Digital 3d Art" />
-    </form>
-    <form action="https://ukjolie2.github.io/phys-art.html">
-        <input type="submit" value="Physical Art" />
-    </form>
+    <script type="text/javascript">
+        var enlarge = function (ID) {
+            var test = document.getElementById(ID);
+            test.style.width = "250px";
+        }
+        var shrink = function (ID) {
+            var test = document.getElementById(ID);
+            test.style.width = "192px";
+        }
+    </script>
+    <div>
+        <form>
+            <input type="image"
+                   value="Coding Projects"
+                   id="codingProj"
+                   position:absolute
+                   src="TempIcon.png"
+                   z-index:2
+                   onmouseover="enlarge(this.id)"
+                   onmouseout="shrink(this.id)" 
+                   onclick="location.href ='https://ukjolie2.github.io/coding-projects.html'"/>
+        </form> 
+        <form action="https://ukjolie2.github.io/game-projects.html">
+            <input type="image"
+                   value="Game Projects"
+                   id="gameProj"
+                   position:absolute
+                   src="TempIcon.png"
+                   z-index:2
+                   onmouseover="enlarge(this.id)"
+                   onmouseout="shrink(this.id)" />
+        </form>
+        <form action="https://ukjolie2.github.io/animations.html">
+            <input type="image"
+                   value="Animations"
+                   id="animations"
+                   position:absolute
+                   src="TempIcon.png"
+                   z-index:2
+                   onmouseover="enlarge(this.id)"
+                   onmouseout="shrink(this.id)" />
+        </form>
+        <form action="https://ukjolie2.github.io/dig-2d-art.html">
+            <input type="image"
+                   value="Digital 2D Art"
+                   id="2dArt"
+                   position:absolute
+                   src="TempIcon.png"
+                   z-index:2
+                   onmouseover="enlarge(this.id)"
+                   onmouseout="shrink(this.id)" />
+        </form>
+        <form action="https://ukjolie2.github.io/dig-3d-art.html">
+            <input type="image"
+                   value="Digital 3d Art"
+                   id="3dArt"
+                   position:absolute
+                   src="TempIcon.png"
+                   z-index:2
+                   onmouseover="enlarge(this.id)"
+                   onmouseout="shrink(this.id)" />
+        </form>
+        <form action="https://ukjolie2.github.io/phys-art.html">
+            <input type="image"
+                   value="Physical Art"
+                   id="PhysArt"
+                   position:absolute
+                   src="TempIcon.png"
+                   z-index:2
+                   onmouseover="enlarge(this.id)"
+                   onmouseout="shrink(this.id)" />
+        </form>
+</div>
 </body>
 </html>
