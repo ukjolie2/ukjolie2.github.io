@@ -13,8 +13,8 @@
             test.style.width = "192px";
         }
     </script>
-    <div>
-        <form>
+    <div class="container">
+        <form class="card" action="https://ukjolie2.github.io/coding-projects.html">
             <input type="image"
                    value="Coding Projects"
                    id="codingProj"
@@ -22,10 +22,9 @@
                    src="TempIcon.png"
                    z-index:2
                    onmouseover="enlarge(this.id)"
-                   onmouseout="shrink(this.id)" 
-                   onclick="location.href ='https://ukjolie2.github.io/coding-projects.html'"/>
+                   onmouseout="shrink(this.id)"/>
         </form> 
-        <form action="https://ukjolie2.github.io/game-projects.html">
+        <form class="card" action="https://ukjolie2.github.io/game-projects.html">
             <input type="image"
                    value="Game Projects"
                    id="gameProj"
@@ -35,17 +34,7 @@
                    onmouseover="enlarge(this.id)"
                    onmouseout="shrink(this.id)" />
         </form>
-        <form action="https://ukjolie2.github.io/animations.html">
-            <input type="image"
-                   value="Animations"
-                   id="animations"
-                   position:absolute
-                   src="TempIcon.png"
-                   z-index:2
-                   onmouseover="enlarge(this.id)"
-                   onmouseout="shrink(this.id)" />
-        </form>
-        <form action="https://ukjolie2.github.io/dig-2d-art.html">
+        <form class="card" action="https://ukjolie2.github.io/dig-2d-art.html">
             <input type="image"
                    value="Digital 2D Art"
                    id="2dArt"
@@ -55,7 +44,7 @@
                    onmouseover="enlarge(this.id)"
                    onmouseout="shrink(this.id)" />
         </form>
-        <form action="https://ukjolie2.github.io/dig-3d-art.html">
+        <form class="card" action="https://ukjolie2.github.io/dig-3d-art.html">
             <input type="image"
                    value="Digital 3d Art"
                    id="3dArt"
@@ -65,7 +54,7 @@
                    onmouseover="enlarge(this.id)"
                    onmouseout="shrink(this.id)" />
         </form>
-        <form action="https://ukjolie2.github.io/phys-art.html">
+        <form class="card" action="https://ukjolie2.github.io/phys-art.html">
             <input type="image"
                    value="Physical Art"
                    id="PhysArt"
@@ -76,5 +65,13 @@
                    onmouseout="shrink(this.id)" />
         </form>
 </div>
+    <style>
+        .container {
+            text-align: center;
+        }
+        .card {
+            display: inline-block;
+        }
+    </style>
 </body>
 </html>
